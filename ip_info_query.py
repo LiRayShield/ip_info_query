@@ -42,6 +42,6 @@ while True:
             # 输出错误信息
             print(data["message"])
 
-    except requests.RequestException as e:
+    except requests.RequestException:
         # 处理网络请求异常
-        print("网络请求失败:", e)
+        print("网络请求失败")
